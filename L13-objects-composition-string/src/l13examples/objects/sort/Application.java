@@ -27,7 +27,7 @@ public class Application {
 	}
 	
 	private static int compareByName(Human h1, Human h2) {
-		char[] h1Chars = h1.name.toCharArray();
+		/*char[] h1Chars = h1.name.toCharArray();
 		char[] h2Chars = h2.name.toCharArray();
 		
 		if (h1Chars[0] > h2Chars[0]) {
@@ -36,7 +36,8 @@ public class Application {
 			return 0;
 		} else {
 			return -1;
-		}
+		}*/
+		return h1.name.compareTo(h2.name);
 
 	}
 
