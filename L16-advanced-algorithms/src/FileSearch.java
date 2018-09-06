@@ -8,7 +8,7 @@ public class FileSearch {
 		fun(f,"");
 	}
 	
-	public static void fun (File file, String outputIndent) {
+	public static void fun (File file, final String outputIndent) {
 		File [] fList = file.listFiles(); // создаем массив файла из его элементов
 		for (int i = 0; i<fList.length; i++) { // перебираем массив
 			if (fList[i].isDirectory()) { // проверяем не папка ли
