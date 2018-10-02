@@ -270,6 +270,11 @@ public class TreeSet implements OrderedSet {
 		}
 	}
 
+	
+	
+	
+	
+	
 	public void printWholeTree(){
 		traverseTreeAndPrintIt(root);
 	}
