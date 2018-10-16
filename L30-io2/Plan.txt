@@ -1,0 +1,61 @@
+Картинка пусть будет по ссылке, хорошая шпаргалка без лишних слов:
+https://www.math.uni-hamburg.de/doc/java/tutorial/essential/io/overview.html
+
+1. Потоки на основе массивов - использование для совместимости.
+
+2. FileFilter
+   finally+closeble, try with resources with AutoCloseable (from java 7)
+   BufferedInputStream / Output  - новых методов нет, оптимизация и поддержка марк+ресет. Напрямую не пользуем.
+   EOFException 
+   
+2.1 Разговор о именах файлов.
+   
+   
+2.2   PipedInputStream\PipedOutputStream - Typically, data is read from a PipedInputStream object by one thread and data is written to the corresponding PipedOutputStream by some other thread. Чем-то на очередь похож. Особо дикий случай - небезопасен в одном потоке, но безопасен в разных потоках. В принципе оно удобства ради, иногда. Можно прожить жизнь ни разу этим не воспользовавшись.
+   Концепция "circular buffer". На примере PipedStreams красиво представляется:
+   https://docs.oracle.com/javase/8/docs/api/java/io/PipedInputStream.html   
+   
+3. Console con = System.console(). Single instance. JVM launch options. synchronized 
+	Утилитный класс для удобства, тоже самое можно сделать и через Стримы. Ничего не имплементирует.
+	control-D on Unix or control-Z on Windows = end of the console input stream. Хотя читать все равно будет, если что следом придет.
+	
+3.1 FilterInputStream - переопределяет все методы просто как прокси-передатчик. Идея - наследоваться от этой общей базы для умного чтения данных. Этот класс напрямую не используется, только как предок для ваших умных потоков. 
+	
+3.2 PrintStream  (Тот самый System.out.println())
+https://docs.oracle.com/javase/8/docs/api/java/lang/System.html
+Более популярная альтернатива - использование Writers. Но если надо чтоб "как принтлн"  - то вариант хороший.
+	
+   
+
+5. DataInput, DataOutput - общая идея - читать писать примитивные типы данных. Но расширяется и до объектных.
+						- удобные методы чтения примитивов и Стринга. Формат записи не определен, возможны разные реализации.
+Serializable, Externalizable
+ObjectInput
+ObjectOutput
+ObjectStreamConstants - константы, используемые во внутреннем механимзме сериализации. Напрямую нам не нужны.
+Impl : ObjectInputStream, ObjectOutputStream реализуют всё выше указанное
+ключевое слово transient
+термины marshaling and unmarshaling
+
+
+Ещё пару специфических обговаривать не будем. Но в ДЗ2 стоит разобраться самостоятельно.
+
+
+ДЗ1. Пакет java.util.zip - ДЗ разобраться самостоятельно.
+
+
+
+
+
+Readers/Writers
+
+ДЗ2. В пакете java.io надо нормально понимать для чего нужны все классы, интерфейсы и исключения. Забить можно только на FileDescriptor, LineNumberInputStream (устарел), и внутренняя кухня сериализации необязательна (SerializablePermission и пара внутренних\дополнительных к ObjectStream).
+
+ДЗ3 
+Найти расстояние между самым южным городом Беларуси, и самым северным городом Италии, среди городов, население 
+которых больше 73943 человек. 
+Если не хочется заморчаиваться с поиском расстояния по широте\долготе, то хотя бы названия этих городов.
+
+
+
+
