@@ -1,4 +1,4 @@
-package notebook_data;
+package homework.notebook.notebook_data;
 
 public class Messages {
     public final static String ADD_NOTE = "----------------------\nЗапись добавлена\n----------------------";

@@ -1,7 +1,9 @@
+package homework.notebook;
 
 import java.util.Iterator;
 
-import notebook_data.*;
+import homework.notebook.notebook_data.*;
+
 import java.text.SimpleDateFormat;
 import java.util.*;
 

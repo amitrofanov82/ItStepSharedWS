@@ -1,4 +1,4 @@
-package notebook_data;
+package homework.notebook.notebook_data;
 
 import java.util.Date;
 

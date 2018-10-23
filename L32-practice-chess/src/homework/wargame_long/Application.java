@@ -1,3 +1,5 @@
+package homework.wargame_long;
+
 public class Application {
 
 	private double n = 1;

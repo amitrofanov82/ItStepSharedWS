@@ -1,4 +1,4 @@
-package notebook_data;
+package homework.notebook.notebook_data;
 
 public class CredentialRecord {
     private String login;

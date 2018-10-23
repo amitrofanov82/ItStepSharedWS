@@ -1,3 +1,5 @@
+package homework.wargame_short;
+
 import java.util.Scanner;
 
 public class MainDzWargamingShort {

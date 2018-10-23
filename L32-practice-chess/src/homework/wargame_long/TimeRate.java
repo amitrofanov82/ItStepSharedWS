@@ -1,3 +1,5 @@
+package homework.wargame_long;
+
 import java.util.Scanner;
 
 public class TimeRate {

@@ -1,3 +1,4 @@
+package homework.notebook;
 
 import java.util.Scanner;
 
@@ -61,6 +62,7 @@ public class NotebookCommunicator {
             }
         }
     }
+
 
     private void operationNote(int numberOperation) {
         switch (numberOperation) {

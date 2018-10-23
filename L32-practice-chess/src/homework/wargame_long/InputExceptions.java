@@ -1,3 +1,5 @@
+package homework.wargame_long;
+
 public class InputExceptions extends RuntimeException {
 	public  InputExceptions () {
         super();

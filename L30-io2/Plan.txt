@@ -43,10 +43,6 @@ Impl : ObjectInputStream, ObjectOutputStream реализуют всё выше 
 
 ДЗ1. Пакет java.util.zip - ДЗ разобраться самостоятельно.
 
-
-
-
-
 Readers/Writers
 
 ДЗ2. В пакете java.io надо нормально понимать для чего нужны все классы, интерфейсы и исключения. Забить можно только на FileDescriptor, LineNumberInputStream (устарел), и внутренняя кухня сериализации необязательна (SerializablePermission и пара внутренних\дополнительных к ObjectStream).
