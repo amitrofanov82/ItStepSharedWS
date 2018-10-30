@@ -1,0 +1,72 @@
+I Чуть больше про сериализацию.
+
+1. В контексте сериализации слово transient (не помню, говорили ли)
+
+2. В контексте сериализации круговая зависимость. 
+
+3. Externilizable.
+
+II Классы и интерфейсы из стандатрной библиотеки, стоящие того, чтобы про них вспомнить:
+
+1. java.lang:
+
+java.lang.Appendable
+java.lang.CharSequence
+java.lang.Comparable<T> vs Comparator
+java.lang.Process + ProcessBuilder
+java.lang.System vs Runtime  http://net-informations.com/java/cjava/runtime.htm
+java.lang.StackTraceElement, Throwable.getStackTrace()
+
+Exceptions and Errors - worth to overview yourselves.
+
+2. java.math.BigInteger/BigDecimal (напоминалка)
+
+3. java.text: (зайти в описание пакета)
+	DecimalFormat
+	SimpleDateFormat
+
+4. java.util.zip - этот пакет был на самостоятельное изучение с домешней задачей запакаовать\распаковать набор файлов.
+
+5. java.util:
+printf(), String.format(...), Formatter (примеры с интрукции к форматтеру)
+
+Collections, Arrays (напоминалка)
+Date, Calendar, GregorianCalendar, TimeZone
+BitSet
+Currency
+Locale
+ResourceBundle (совсем чуть-чуть, вспомним о нем ещё когда буде java ee интернационализацию обсуждать)
+StringTokenizer
+
+Методы Стринга:
+
++Optional<T> (java 8)	
++. java.time - отдельный разговор о джаве 8, сегодня ограничимся java.util
++. java.util.function - отдельный разговор о джаве 8 о стримах и лямбдах
+
+
+
+III Тема enums.
+
+IV ClassLoader and resources from ClassPath
+
+V Подтянуть какой apache-commons-io с помощью Мавена
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
