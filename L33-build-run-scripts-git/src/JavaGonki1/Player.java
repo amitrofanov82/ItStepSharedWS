@@ -13,7 +13,9 @@ public class Player {
 	public static final int MAX_TOP = 270;
 	public static final int MAX_BOTTOM = 720;
 	
-	Image img_c = new ImageIcon(getClass().getClassLoader().getResource("Resurses/carone.png")).getImage();
+	Image img_c = new ImageIcon(
+				this.getClass().getClassLoader().getResource("Resurses/carone.png")
+			).getImage();
 	Image img_l = new ImageIcon(getClass().getClassLoader().getResource("Resurses/carjneleft.png")).getImage();
 	Image img_r = new ImageIcon(getClass().getClassLoader().getResource("Resurses/caroneright.png")).getImage();
 	
