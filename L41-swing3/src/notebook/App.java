@@ -11,14 +11,12 @@ public class App {
 		if (args.length > 0 && args[0].equals("console")) {
 			NotebookCommunicator com = new NotebookCommunicator();
 			com.start();
-		} else if(args.length > 0 && args[0].equals("desktop")) {
+		} else {
 			JFrame window = new MainWindow();
 			window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 			window.setResizable(false);
 			window.setVisible(true);
-		} else {
-			throw new RuntimeException("ui CLI parameter should specified");
-		}
+		} 
 		
 
 	}

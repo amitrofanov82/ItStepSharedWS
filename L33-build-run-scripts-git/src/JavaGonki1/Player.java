@@ -9,7 +9,7 @@ import javax.swing.JOptionPane;
 
 public class Player {
 	
-	public static final int MAX_V = 1030;
+	public static final int MAX_V = 1000000030;
 	public static final int MAX_TOP = 270;
 	public static final int MAX_BOTTOM = 720;
 	
@@ -59,7 +59,7 @@ public class Player {
 	public void keyPressed (KeyEvent e) {
 		int key = e.getKeyCode();
 		if (key == KeyEvent.VK_RIGHT) {
-			dv = 1;
+			dv = 10;
 		}
 		if (key == KeyEvent.VK_LEFT) {
 			dv = -1;

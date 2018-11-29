@@ -55,7 +55,7 @@ public class Road extends JPanel implements ActionListener, Runnable  {
 		g.drawImage(img, p.layer2, 0, null);
 		g.drawImage(p.img, p.x, p.y, null);
 		
-		double v = (200/Player.MAX_V)*p.v;
+		double v = (p.v);
 		g.setColor(Color.WHITE);
 		Font font = new Font("Arial", Font.ITALIC, 20);
 		g.setFont(font);
