@@ -16,21 +16,6 @@ public class ForexPlatform {
 		
 		scheduler.sayStatus();
 		
-		
-		
-		
-		Thread t = Thread.currentThread();
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
 	}
 	
 }

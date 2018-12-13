@@ -1,7 +1,7 @@
 package lesson44.multithrading.scheduler;
 
 public class Scheduler {
-	AsyncTask task;
+	private AsyncTask task;
 	
 	public void executeTaskEvery10Sec(){
 		System.out.println("планировщик стартовал");
